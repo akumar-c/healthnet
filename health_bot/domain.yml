@@ -8,26 +8,34 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - triage
+  - age_gender
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+    - text: "Hey! How are you?"
 
   utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+    - text: "Here is something to cheer you up:"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
 
   utter_did_that_help:
-  - text: "Did that help you?"
+    - text: "Did that help you?"
 
   utter_happy:
-  - text: "Great, carry on!"
+    - text: "Great, carry on!"
 
   utter_goodbye:
-  - text: "Bye"
+    - text: "Bye"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+    - text: "I am a bot, powered by Rasa."
+
+  ask_age_and_gender:
+    - text: Hi, Thanks for reaching out. I'm Tiger Health bot and I will help you triage your condition. Can you tell me your age and gender?
+
+  ask_symptoms:
+    - text: Can you tell me what are the symptoms you are experiencing right now?
 
 session_config:
   session_expiration_time: 60
